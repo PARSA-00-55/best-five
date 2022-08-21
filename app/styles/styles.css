@@ -1,21 +1,201 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* font family link */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+/* font family links */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 body{
-    background-color: rgb(73, 73, 73);
+    /* background: linear-gradient(#614385, #516395); */
     font-family: 'Roboto', sans-serif;
+    background-color: #252629;
 }
+h1{
+    padding: 30vh 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Aboreto', cursive;
+    font-size: 6rem;
+    font-weight: 800;
+}
+h3{
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+h4{
+    font-size: 2rem;
+}
+p{
+    font-weight: 600;
+    word-spacing: 8px;
+    color: #B3B3B3;
+}
+span{
+    width: 45%;
+    word-spacing: 8px;
+    color: #B3B3B3;
+}
+hr{
+    height: 6px;
+    width: 55%;
+    margin: auto;
+    border: none;
+    border-radius: 1000px;
+    background-color: orangered;
+}
+button{
+    width: 75%;
+    letter-spacing: 1px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 800;
+    background-color: #015196;
+    transition: 300ms ease-in;
+}
+button:hover{
+    color: black;
+    background-color: #ffffff;
+}
+input{
+    width: 65%;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    background-color: #b1aeae;
+    transition: 300ms ease-out;
+}
+input:focus{
+    background-color: antiquewhite;
+}
+.section-heading{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+footer{
+    padding: 10;
+}
+/* utiliti styles */
 
+/* header section start */
 header{
-    height: 30vh;
+    width: 100%;
     text-align: center;
     color: orangered;
+    background: linear-gradient(to right, #614385, #516395);
+}
+/* header section end */
+
+/* main section start */
+main{
+    height: auto;
+    width: min(90%, 1400px);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: auto;
+    /* background-color: aqua; */
+}
+/* main section end */
+
+/* parents styles start */
+#grand-parent{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+}
+.parent-1{
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    /* border: 1px solid red; */
+}
+.parent-2{
+    
+    height: 100%;
+    /* background-color: chartreuse; */
+}
+/* parents styles end */
+
+/* card style start */
+.card{
+    width: 18rem;
     background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-header>h1{
-    padding: 20vh;
+.card > img{
+    height: 264px;
+    width: 100%;
 }
+.card-body{
+    width: 100%;
+    padding-bottom: 1rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* card style end */
+
+/* selected section start */
+#selected{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2rem;
+    background-color: black;
+    color: white;
+}
+#selected-list{
+    width: 65%;
+    margin: auto;
+}
+#selected-list>ol{
+    padding: 1rem 1rem 1rem 1rem;
+}
+#selected-list>ol>li{
+    padding: 0.5rem;
+    /* list-style: none; */
+}
+/* selected section end */
+
+/* budget section start */
+#budget{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 2rem;
+    background-color: black;
+    color: white;
+}
+.budget-body{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.budget-body>div{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+/* budget section end */
+
+/* footer section start */
+#footer-hr{
+    width: 100%;
+    background-color: #717171;
+}
+footer{
+    padding: 10vh;
+    text-align: center;
+}
+/* footer section end */
