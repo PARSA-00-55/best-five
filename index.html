@@ -8,7 +8,7 @@
     <!-- CSS file link -->
     <link rel="stylesheet" href="app/styles/styles.css">
     <!-- JS file link -->
-    <script defer src="app/js/index.js"></script>
+    <script defer src="app/js/select.js"></script>
 </head>
 <body>
     <!-- header section start -->
@@ -31,7 +31,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button class="btn-select">SELECT</button>
+                    <button id="btn-one" >SELECT</button>
                     </div>
                 </div>
                 <!-- card-2 -->
@@ -43,7 +43,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button class="btn-select">SELECT</button>
+                    <button id="btn-two">SELECT</button>
                     </div>
                 </div>
                 <!-- card-3 -->
@@ -55,7 +55,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button class="btn-select">SELECT</button>
+                    <button id="btn-three">SELECT</button>
                     </div>
                 </div>
                 <!-- card-4 -->
@@ -67,7 +67,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button class="btn-select">SELECT</button>
+                    <button id="btn-four">SELECT</button>
                     </div>
                 </div>
                 <!-- card-5 -->
@@ -79,7 +79,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button class="btn-select">SELECT</button>
+                    <button id="btn-five">SELECT</button>
                     </div>
                 </div>
                 <!-- card-6 -->
@@ -91,7 +91,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button class="btn-select">SELECT</button>
+                    <button id="btn-six">SELECT</button>
                     </div>
                 </div>
             </section>
@@ -108,12 +108,8 @@
                         <hr>
                     </div>
                     <div id="selected-list">
-                        <ol>
-                            <li>item-1</li>
-                            <li>item-2</li>
-                            <li>item-3</li>
-                            <li>item-4</li>
-                            <li>item-5</li>
+                        <ol id="main-list">
+                            <!-- "li" will added dynamicly -->
                         </ol>
                     </div>
                 </div>
