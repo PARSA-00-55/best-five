@@ -102,11 +102,13 @@ main{
 #grand-parent{
     display: grid;
     grid-template-columns: 1fr 350px;
+    column-gap: 0;
 }
 .parent-1{
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 0;
     row-gap: 2rem;
 }
 .parent-2{
