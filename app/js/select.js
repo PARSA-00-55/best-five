@@ -2,16 +2,19 @@ const mainlist = document.getElementById('main-list');
 const playerArray = [];
 
 function display(){
-  console.log(playerArray.length)
 }
 
 function playerListAppend(element){
    const li = document.createElement('li');
        li.innerText = element; 
-       mainlist.appendChild(li);
+       if(playerArray.length === 6){
+        alert(`You can't select More than five.`);
+        return playerArray.pop();
+       }else{
+       mainlist.appendChild(li);}
        
 }
-
+//onclik function
 function addData(xyz){
   
    const playerName = xyz.parentNode.children[0].innerText;
@@ -21,6 +24,9 @@ function addData(xyz){
    playerArray.push(playerObj);
    playerListAppend(playerName)
    display(playerArray)
-}
 
-// console.log(playerArray.length)
+   if(xyz.disabled = true){
+    document.getElementById('btn').style. color = black,
+    document.getElementById('btn').style. background = white;
+   }
+}

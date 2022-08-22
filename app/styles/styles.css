@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 /* font family links */
 *{
     margin: 0;
@@ -11,10 +12,9 @@ body{
 }
 h1{
     padding: 30vh 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 6rem;
     letter-spacing: 3px;
-    /* font-weight: 600; */
 }
 h3{
     font-size: 1.5rem;
@@ -52,10 +52,6 @@ button{
     background-color: #015196;
     transition: 300ms ease-in;
 }
-button:hover{
-    color: black;
-    background-color: #ffffff;
-}
 input{
     width: 65%;
     padding: 0.6rem;
@@ -78,12 +74,17 @@ footer{
 }
 /* utiliti styles */
 
+
 /* header section start */
 header{
     width: 100%;
     text-align: center;
-    color: orangered;
-    background: linear-gradient(to right, #614385, #516395);
+    text-shadow: 5px 5px 20px black;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, #555555, #252525); /*if background picture could not loaded*/
+    background: url(/imges/Football-Stadium-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* header section end */
 
