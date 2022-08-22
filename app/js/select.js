@@ -1,80 +1,26 @@
-//button for lionel messi
 const mainlist = document.getElementById('main-list');
-document.getElementById('btn-one').addEventListener('click', function(){
+const playerArray = [];
 
-    function addLitoThelist(){
-        // const stringifiObj = JSON.stringify(livalue);
-        const li = document.createElement('li');
-        li.innerText = 'Lionel Messi';
-        mainlist.appendChild(li);
-    }
-    addLitoThelist()
-},{once : true}
-)
-//button for Neymar JR 
-document.getElementById('btn-two').addEventListener('click', function(){
+function display(){
+  console.log(playerArray.length)
+}
 
-    function addLitoThelist(){
-        // const mainlist = document.getElementById('main-list');
-        // const stringifiObj = JSON.stringify(livalue);
-        const li = document.createElement('li');
-        li.innerText = 'Neymar Jr';
-        mainlist.appendChild(li);
-    }
-    addLitoThelist()
-},{once : true}
-)
-//button for Kylian Mbappé
-document.getElementById('btn-three').addEventListener('click', function(){
+function playerListAppend(element){
+   const li = document.createElement('li');
+       li.innerText = element; 
+       mainlist.appendChild(li);
+       
+}
 
-    function addLitoThelist(){
-        // const mainlist = document.getElementById('main-list');
-        // const stringifiObj = JSON.stringify(livalue);
-        const li = document.createElement('li');
-        li.innerText = 'Kylian Mbappé';
-        mainlist.appendChild(li);
-    }
-    addLitoThelist()
-},{once : true}
-)
-//button for Vítor Machado
-document.getElementById('btn-four').addEventListener('click', function(){
+function addData(xyz){
+  
+   const playerName = xyz.parentNode.children[0].innerText;
+   const playerObj = {
+       playerName : playerName,
+   }
+   playerArray.push(playerObj);
+   playerListAppend(playerName)
+   display(playerArray)
+}
 
-    function addLitoThelist(){
-        // const mainlist = document.getElementById('main-list');
-        // const stringifiObj = JSON.stringify(livalue);
-        const li = document.createElement('li');
-        li.innerText = 'Vítor Machado';
-        mainlist.appendChild(li);
-    }
-    addLitoThelist()
-},{once : true}
-)
-//button for Sergio Ramos
-document.getElementById('btn-five').addEventListener('click', function(){
-
-    function addLitoThelist(){
-        // const mainlist = document.getElementById('main-list');
-        // const stringifiObj = JSON.stringify(livalue);
-        const li = document.createElement('li');
-        li.innerText = 'Sergio Ramos';
-        mainlist.appendChild(li);
-    }
-    addLitoThelist()
-},{once : true}
-)
-//button for Renato Sanches
-document.getElementById('btn-six').addEventListener('click', function(){
-    function addLitoThelist(){
-        // const mainlist = document.getElementById('main-list');
-        // const stringifiObj = JSON.stringify(livalue);
-        const li = document.createElement('li');
-        li.innerText = 'Renato Sanches';
-        mainlist.appendChild(li);
-    }
-    addLitoThelist()
-},{once : true}
-)
-
-
-
+// console.log(playerArray.length)

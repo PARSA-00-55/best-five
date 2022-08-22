@@ -8,7 +8,9 @@
     <!-- CSS file link -->
     <link rel="stylesheet" href="app/styles/styles.css">
     <!-- JS file link -->
+    <script defer src="app/js/utilities.js"></script>
     <script defer src="app/js/select.js"></script>
+    <script defer src="app/js/budget.js"></script>
 </head>
 <body>
     <!-- header section start -->
@@ -31,7 +33,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button id="btn-one" >SELECT</button>
+                    <button id="btn-one" onclick="addData(this)" >SELECT</button>
                     </div>
                 </div>
                 <!-- card-2 -->
@@ -43,7 +45,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button id="btn-two">SELECT</button>
+                    <button id="btn-two" onclick="addData(this)">SELECT</button>
                     </div>
                 </div>
                 <!-- card-3 -->
@@ -55,7 +57,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button id="btn-three">SELECT</button>
+                    <button id="btn-three" onclick="addData(this)">SELECT</button>
                     </div>
                 </div>
                 <!-- card-4 -->
@@ -67,7 +69,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button id="btn-four">SELECT</button>
+                    <button id="btn-four" onclick="addData(this)">SELECT</button>
                     </div>
                 </div>
                 <!-- card-5 -->
@@ -79,7 +81,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button id="btn-five">SELECT</button>
+                    <button id="btn-five" onclick="addData(this)">SELECT</button>
                     </div>
                 </div>
                 <!-- card-6 -->
@@ -91,7 +93,7 @@
                     <br>
                     <p><span>36 Goals</span>&nbsp;|&nbsp;<span>120 Assist</span></p>
                     <br>
-                    <button id="btn-six">SELECT</button>
+                    <button id="btn-six" onclick="addData(this)">SELECT</button>
                     </div>
                 </div>
             </section>
@@ -107,6 +109,7 @@
                         <br>
                         <hr>
                     </div>
+                    <!-- body -->
                     <div id="selected-list">
                         <ol id="main-list">
                             <!-- "li" will added dynamicly -->
@@ -130,7 +133,7 @@
                             <input type="text" placeholder="">
                             </div>
                             <br>
-                            <button>Calculate</button>
+                            <button id="calculate">Calculate</button>
                             <br>
                             <p>Player Expense : $<span>00</span></p>
                         </div>
@@ -146,9 +149,9 @@
                             <input type="text" placeholder="">
                             </div>
                             <br>
-                            <button>Calculate</button>
+                            <button>Calculate Total</button>
                             <br>
-                            <p>Player Expense : <span style="color: orangered;">$<span style="color: orangered;">00</span></span></p>
+                            <p>Total : <span style="color: orangered;">$<span style="color: orangered;">00</span></span></p>
                         </div>
                     </div>
                 </div>
